@@ -1,0 +1,23 @@
+<template>
+  <div>
+<p class="marquee">
+{{marquee}}
+</p>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      marquee: 'Welcome to my homepage!!                        '
+    }
+  }
+}
+</script>
+
+<style>
+.marquee{
+  background-color: #ffff00 ;
+}
+</style>
