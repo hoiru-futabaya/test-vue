@@ -1,6 +1,6 @@
 <template>
 <div>
-<myheader></myheader>
+<mymarquee></mymarquee>
 <div>
     <p class="basetext" v-if="msg.length > 0">
       {{msg}}
@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import myheader from './components/myheader'
+import mymarquee from './components/mymarquee'
 
 export default {
   components: {
-    myheader
+    mymarquee
   },
   data () {
     return {
