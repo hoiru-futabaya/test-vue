@@ -16,7 +16,7 @@ export default {
   },
   updated () {
     setTimeout(() => {
-      this.msg = this.msg.slice(-2) + this.msg.slice(0, -2)
+      this.msg = this.msg.slice(-1) + this.msg.slice(0, -1)
     }
       , 500
     )

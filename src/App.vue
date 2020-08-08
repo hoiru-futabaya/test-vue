@@ -1,27 +1,24 @@
 <template>
 <div>
-<mymarquee></mymarquee>
-<div>
-    <p class="basetext" v-if="msg.length > 0">
+  <mymarquee></mymarquee>
+    <p class="basetext">
       {{msg}}
     </p>
-    <p v-else>
-      no text
-    </p>
+<counter></counter>
 </div>
-  </div>
 </template>
 
 <script>
 import mymarquee from './components/mymarquee'
+import counter from './components/counter'
 
 export default {
   components: {
-    mymarquee
+    mymarquee, counter
   },
   data () {
     return {
-      msg: 'ちんちん！'
+      msg: '双葉屋ほいるのホームページ'
     }
   }
 }
