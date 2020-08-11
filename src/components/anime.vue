@@ -53,31 +53,6 @@ export default {
       }
     }
   }
-//    created () {
-//    setTimeout(() => {
-//      this.color = this.colorful[0]
-//    }
-//      , 2000
-//    )
-//  },
-//  computed: {
-//    styles () {
-//      return {
-//        '--colora': this.color
-//      }
-//    }
-//  },
-//  updated () {
-//    setTimeout(() => {
-//      rangea += 1
-//      this.color = this.colorful[rangea]
-//    }
-//      , 2000
-//    )
-//    if (rangea === 4) {
-//      rangea = -1
-//    }
-//  }
 }
 </script>
 
