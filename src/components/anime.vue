@@ -1,93 +1,85 @@
 <template>
-  <div>
-<p class="moon aaa" :style="styles">            *         </p>
-<p class="moon bbb" :style="styles">      ｡              ☆</p>
-<p class="moon ccc" :style="styles">＊      ＿ﾆ三三三＝＿ </p>
-<p class="moon ddd" :style="styles">      _ﾆ三三三ﾆ＝￣   </p>
-<p class="moon eee" :style="styles">    _ﾆ三三三ﾆ￣      *</p>
-<p class="moon aaa" :style="styles">ﾟ-ﾆ三三三ﾆ-      ★    </p>
-<p class="moon bbb" :style="styles">-ﾆ三三三ﾆ-  +      +  </p>
-<p class="moon ccc" :style="styles">ﾆ三三三三             </p>
-<p class="moon ddd" :style="styles">三三三三ﾆ      *  ☆   </p>
-<p class="moon eee" :style="styles">ﾆ三三三三  ☆          </p>
-<p class="moon aaa" :style="styles">-ﾆ三三三ﾆ-            </p>
-<p class="moon bbb" :style="styles">｡-ﾆ三三三ﾆ-           </p>
-<p class="moon ccc" :style="styles">    -ﾆ三三三ﾆ_        </p>
-<p class="moon ddd" :style="styles">★    -ﾆ三三三         </p>
-<p class="moon eee" :style="styles">   *  *￣＝三三ニ＝-  </p>
+ <div>
+<!-- titleは静的、colorは動的なプロパティ-->
+<colorwave :title="alpha.A" :color="value.A"></colorwave>
+<colorwave :title="alpha.B" :color="value.B"></colorwave>
+<colorwave :title="alpha.C" :color="value.C"></colorwave>
+<colorwave :title="alpha.D" :color="value.D"></colorwave>
+<colorwave :title="alpha.E" :color="value.E"></colorwave>
+<colorwave :title="alpha.F" :color="value.A"></colorwave>
+<colorwave :title="alpha.G" :color="value.B"></colorwave>
+<colorwave :title="alpha.H" :color="value.C"></colorwave>
+<colorwave :title="alpha.I" :color="value.D"></colorwave>
+<colorwave :title="alpha.J" :color="value.E"></colorwave>
+<colorwave :title="alpha.K" :color="value.A"></colorwave>
+<colorwave :title="alpha.L" :color="value.B"></colorwave>
+<colorwave :title="alpha.M" :color="value.C"></colorwave>
+<colorwave :title="alpha.N" :color="value.D"></colorwave>
+<colorwave :title="alpha.O" :color="value.E"></colorwave>
     </div>
 </template>
 
 <script>
-var rangea = 0
-// var rangeb = 1
-// var rangec = 2
-// var ranged = 3
-// var rangee = 4
+import colorwave from './color-wave.vue'
 export default {
-  name: 'moon',
+  components: {
+    colorwave
+  },
   data: function () {
     return {
-      color: '',
-      colorful: ['red', 'yellow', 'green', 'blue', 'purple']
-    }
-  },
-  created () {
-    setTimeout(() => {
-      this.color = this.colorful[0]
-    }
-      , 2000
-    )
-  },
-  computed: {
-    styles () {
-      return {
-        '--colora': this.color
+      alpha: {
+        A: '            *         ',
+        B: '      ｡              ☆',
+        C: '＊      ＿ﾆ三三三＝＿ ',
+        D: '      _ﾆ三三三ﾆ＝￣   ',
+        E: '    _ﾆ三三三ﾆ￣      *',
+        F: 'ﾟ-ﾆ三三三ﾆ-      ★    ',
+        G: '-ﾆ三三三ﾆ-  +      +  ',
+        H: 'ﾆ三三三三             ',
+        I: '三三三三ﾆ      *  ☆   ',
+        J: 'ﾆ三三三三  ☆          ',
+        K: '-ﾆ三三三ﾆ-            ',
+        L: '｡-ﾆ三三三ﾆ-           ',
+        M: '    -ﾆ三三三ﾆ_        ',
+        N: '★    -ﾆ三三三         ',
+        O: '   *  *￣＝三三ニ＝-  '
+      },
+      value: {
+        A: 0,
+        B: 1,
+        C: 2,
+        D: 3,
+        E: 4
       }
     }
-  },
-  updated () {
-    setTimeout(() => {
-      rangea += 1
-      this.color = this.colorful[rangea]
-    }
-      , 2000
-    )
-    if (rangea === 4) {
-      rangea = -1
-    }
   }
+//    created () {
+//    setTimeout(() => {
+//      this.color = this.colorful[0]
+//    }
+//      , 2000
+//    )
+//  },
+//  computed: {
+//    styles () {
+//      return {
+//        '--colora': this.color
+//      }
+//    }
+//  },
+//  updated () {
+//    setTimeout(() => {
+//      rangea += 1
+//      this.color = this.colorful[rangea]
+//    }
+//      , 2000
+//    )
+//    if (rangea === 4) {
+//      rangea = -1
+//    }
+//  }
 }
 </script>
 
 <style scoped>
-.moon{
-  white-space: pre;
-  letter-spacing: 0.25rem;
-  line-height: 1;
-  margin-left: 0;/*左*/
-  margin-top: 0;/*上*/
-  margin-right: 0;/*右*/
-  margin-bottom: 0;/*下*/
-}
-.aaa{
-  --colora: white;
-  color: var(--colora);
-}
-.bbb{
-  --colorb: yellow;
-  color: var(--colorb);
-}
-.ccc{
-  --colorc: green;
-  color: var(--colorc);
-}
-.ddd{
-  --colord: blue;
-  color: var(--colord);
-}
-.eee{
-  --colore: purple;
-  color: var(--colore);
-}
 </style>
