@@ -33,7 +33,8 @@ export default {
 
 <style>
 #marquee{
-  background-color: #ffff00 ;
+  background-color: #ccccff ;
+  color: #000000;
   display: inline ;
   white-space: pre ;
 }

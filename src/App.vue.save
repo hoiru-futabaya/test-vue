@@ -1,10 +1,9 @@
-<template>
+<template>	
 <div>
     <p class="basetext">
       {{msg}}
     </p>
   <mymarquee></mymarquee>
-<br>
 <anime></anime>
 <counter></counter>
 <myborder></myborder>

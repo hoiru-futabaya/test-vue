@@ -25,7 +25,6 @@ export default {
 
 <style>
 #counter{
-  background-color: #ffffff ;
   display: inline ;
   white-space: pre ;
 }
