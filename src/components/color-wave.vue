@@ -1,6 +1,6 @@
 <template>
 <p class="moon" :style="styles">
-{{style}}
+{{title}}
 </p>
 </template>
 
@@ -10,7 +10,7 @@ export default{
   data: function () {
     return {
       style: '',
-      colorful: ['red', 'yellow', 'green', 'blue', 'purple']
+      colorful: ['#ffff80', '#d5d500', '#555500', '#aaaa00', '#ffffaa']
     }
   },
   props: {
@@ -60,7 +60,7 @@ export default{
   margin-top: 0;/*上*/
   margin-right: 0;/*右*/
   margin-bottom: 0;/*下*/
-  --color: white;
+  --color: black;
   color: var(--color);
 }
 </style>
