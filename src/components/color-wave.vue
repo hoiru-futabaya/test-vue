@@ -61,6 +61,6 @@ export default{
   margin-right: 0;/*右*/
   margin-bottom: 0;/*下*/
   --color: white;
-  color: var (--color);
+  color: var(--color);
 }
 </style>
