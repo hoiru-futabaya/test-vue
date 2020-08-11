@@ -1,20 +1,20 @@
 <template>
   <div>
 <p class="moon aaa" :style="styles">            *         </p>
-<p class="moon bbb">      ｡              ☆</p>
-<p class="moon ccc">＊      ＿ﾆ三三三＝＿ </p>
-<p class="moon ddd">      _ﾆ三三三ﾆ＝￣   </p>
-<p class="moon eee">    _ﾆ三三三ﾆ￣      *</p>
+<p class="moon bbb" :style="styles">      ｡              ☆</p>
+<p class="moon ccc" :style="styles">＊      ＿ﾆ三三三＝＿ </p>
+<p class="moon ddd" :style="styles">      _ﾆ三三三ﾆ＝￣   </p>
+<p class="moon eee" :style="styles">    _ﾆ三三三ﾆ￣      *</p>
 <p class="moon aaa" :style="styles">ﾟ-ﾆ三三三ﾆ-      ★    </p>
-<p class="moon bbb">-ﾆ三三三ﾆ-  +      +  </p>
-<p class="moon ccc">ﾆ三三三三             </p>
-<p class="moon ddd">三三三三ﾆ      *  ☆   </p>
-<p class="moon eee">ﾆ三三三三  ☆          </p>
+<p class="moon bbb" :style="styles">-ﾆ三三三ﾆ-  +      +  </p>
+<p class="moon ccc" :style="styles">ﾆ三三三三             </p>
+<p class="moon ddd" :style="styles">三三三三ﾆ      *  ☆   </p>
+<p class="moon eee" :style="styles">ﾆ三三三三  ☆          </p>
 <p class="moon aaa" :style="styles">-ﾆ三三三ﾆ-            </p>
-<p class="moon bbb">｡-ﾆ三三三ﾆ-           </p>
-<p class="moon ccc">    -ﾆ三三三ﾆ_        </p>
-<p class="moon ddd">★    -ﾆ三三三         </p>
-<p class="moon eee">   *  *￣＝三三ニ＝-  </p>
+<p class="moon bbb" :style="styles">｡-ﾆ三三三ﾆ-           </p>
+<p class="moon ccc" :style="styles">    -ﾆ三三三ﾆ_        </p>
+<p class="moon ddd" :style="styles">★    -ﾆ三三三         </p>
+<p class="moon eee" :style="styles">   *  *￣＝三三ニ＝-  </p>
     </div>
 </template>
 
@@ -25,7 +25,7 @@ var rangea = 0
 // var ranged = 3
 // var rangee = 4
 export default {
-  name: 'aaa',
+  name: 'moon',
   data: function () {
     return {
       color: '',
