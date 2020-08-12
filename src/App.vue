@@ -1,13 +1,13 @@
 <template>
 <div>
-    <p class="basetext">
-      {{msg}}
-    </p>
+    <h1>双葉屋銀箔堂</h1>
   <mymarquee></mymarquee>
 <br>
 <anime></anime>
+<br>
 <counter></counter>
 <myborder></myborder>
+
 </div>
 </template>
 
@@ -35,8 +35,5 @@ body{
 div{
   text-align: center;
   color: #ffffff;
-}
-.basetext{
-  font-size: 1.5rem;
 }
 </style>
