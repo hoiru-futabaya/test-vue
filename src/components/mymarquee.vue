@@ -33,12 +33,9 @@ export default {
 
 <style>
 #marquee{
-  line-height: 0.5rem;
   background-color: #ccccff ;
   color: #000000;
-  width: 300px;
-  vertical-align: middle;
-  display: inline-block ;
+  display: inline ;
   white-space: pre ;
 }
 </style>
