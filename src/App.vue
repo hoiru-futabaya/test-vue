@@ -7,7 +7,16 @@
 <br>
 <counter></counter>
 <myborder></myborder>
-
+<br>
++ Profile 自己紹介 +<br>
+<br>
++ Activation 主な活動 +<br>
+<br>
++ Twitter ツイッター +<br>
+<br>
++ Links リンク +<br>
+<myborder></myborder>
+<h5>※このサイトはVue.jsの学習がてら2000年くらいによくあったサイトデザインをまねて作ったものです</h5>
 </div>
 </template>
 

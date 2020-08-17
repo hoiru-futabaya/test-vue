@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import access from '@/access/access.js'
+import axios from 'axios'
 export default {
   el: '#counter',
   data () {
@@ -16,7 +16,9 @@ export default {
     }
   },
   created () {
-    this.count = access.accessCount()
+    axios
+      .get('https://script.google.com/macros/s/AKfycbwMZwR-7TSCJ79fgfc8yiU37at5fpt6wcVDMTI7Weik-bYqxBaH/exec')
+      .then(response => (this.count = response['data']['count']))
   }
 }
 </script>
