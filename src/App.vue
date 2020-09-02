@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="bg">
     <h1>双葉屋銀箔堂</h1>
   <mymarquee></mymarquee>
 <br>
@@ -10,7 +10,7 @@
 <br>
 + Profile 自己紹介 +<br>
 <br>
-+ Activation 主な活動 +<br>
++ Activity 主な活動 +<br>
 <br>
 + Twitter ツイッター +<br>
 <br>
@@ -45,4 +45,7 @@ div{
   text-align: center;
   color: #ffffff;
 }
+.bg {
+  background-image: url("~@/assets/darkness.png");
+  }
 </style>
