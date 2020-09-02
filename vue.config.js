@@ -1,5 +1,4 @@
 module.exports = {
-  publicPath: "./",
-  assetsDir: "",
-  outputDir: "dist"
+  publicPath: '/test-vue/',
+  outputDir: 'docs'
 }
